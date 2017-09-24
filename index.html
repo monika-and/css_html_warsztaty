@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt portfolio</title>
     
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
    <!-- wstawianie menu -->
-   <nav>
-        <label for="drop" class="toggle">Menu</label>
-       <input type="checkbox" id="drop" />
+   <nav id="menu">
+        <p class="menu">Menu</p>
        
         <ul>
             <li class="menu-item"><a href="about">O mnie</a></li>
@@ -25,35 +25,64 @@
    </nav>
    
    <!-- wstawianie headera -->
-   <header>
-       <h2>Monika Andrzejewska</h2>
+   <header id="main-header"> 
+       <h2 id="header-caption">Monika Andrzejewska</h2>
        <h3>Junior Frontend Developer</h3>
    </header>
    
    <!-- dodawanie sekcji o mnie -->
    <section id="about">
-       <h2>O mnie</h2>
-       <p>Nazywam się Monika Andrzejewska. Od pewnego czasu interesuję się programowaniem Front End. Uczestniczyłam w bootcampie organizowanym przez Akademię 108 i chciałabym dalej się rozwijać, czerpiąc z doświadczenia Front End Developerów. Jestem pełna motywacji i determinacji do dalszej pracy.</p>
+       <h3>O mnie</h3>
+       <p>Nazywam się <strong>Monika Andrzejewska</strong>. Od pewnego czasu interesuję się programowaniem Front End. Uczestniczyłam w bootcampie organizowanym przez Akademię 108 i chciałabym dalej się rozwijać, czerpiąc z doświadczenia Front End Developerów. Jestem pełna motywacji i determinacji do dalszej pracy.</p>
    </section>
     
    <!-- dodawanie sekcji umiejętności -->
    <section id="skills">
-      <h2>Umiejętności</h2>
+      <h3>Umiejętności</h3>
        <p>W trakcie trwania kursu poznałam:</p>
-       <img src="icons/HTML5.png" alt="Ikona HTML5">
-       <img src="icons/CSS3.png" alt="Ikona CSS3">
-       <img src="icons/JS.png" alt="Ikona JavaScript">
-       <img src="icons/rwd.png" alt="Ikona RWD">
-       <img src="icons/jQuery.png" alt="Ikona jQuery">
-       <img src="icons/git.png" alt="Ikona git">
-       <img src="icons/gulp.png" alt="Ikona gulp">
-       <img src="icons/sass.png" alt="Ikona Sass">
-              
+       <div class="icons">
+           <img src="icons/HTML5.png" alt="Ikona HTML5">
+           <img src="icons/CSS3.png" alt="Ikona CSS3">
+           <img src="icons/JS.png" alt="Ikona JavaScript">
+           <img src="icons/rwd.png" alt="Ikona RWD">
+           <img src="icons/jQuery.png" alt="Ikona jQuery">
+           <img src="icons/git.png" alt="Ikona git">
+           <img src="icons/gulp.png" alt="Ikona gulp">
+           <img src="icons/sass.png" alt="Ikona Sass">
+        </div>
+   </section>
+   
+   <section id="contact">
+     <div class="contact-data">
+      <p>Monika Andrzejewska</p>
+        <address>
+            ul. Warszawska <br>
+            02-495 Warszawa<br><br>
+            tel:508 599 631<br>
+            e-mail: <a href="mailto:monica.andrzejewska@gmail.com">monica.andrzejewska@gmail.com</a>
+        </address>
+         <div class="contact-social-icons">
+             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         </div>
+        </div>
+       
+       <div class="contact-form"> 
+         <form action="#">
+             <input type="text" name="name" placeholder="Imię i nazwisko" />
+             <input type="text" name="email" placeholder="Adres e-mail" />
+             <textarea name="message" placeholder="Wiadomość"></textarea>
+             <input type="submit" value="Wyślij"/>
+         </form>
+     </div>
    </section>
    
     <!-- dodawanie footera -->
     <footer>
-        
+     <p class="copyright">Copyrigt &copy; Monika Andrzejewska</p>
+  
     </footer>
     
 </body>

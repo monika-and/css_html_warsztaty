@@ -1,0 +1,134 @@
+/* general styles */
+
+* { 
+box-sizing: border-box;
+}
+
+/* dodanie fontu dla strony */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: darkslateblue;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    color: darkorange;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: orange;
+}
+a {
+    transition: all .3;
+    color: firebrick;
+}
+
+p {
+    font-size: 23px;
+    text-align: center;
+}
+
+/* main nav styles */
+
+nav#menu {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav#menu .menu {
+    text-align: left;
+}
+
+#menu > ul {
+    text-align: right;
+    margin-top: 0;
+    
+}
+
+#menu > ul > li.menu-item {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* main header styles */
+#main-header {
+    background-image: url(../img/laptop_056_zeszyt__notatnik__dlugopis.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#main-header > #header-caption {
+    padding-top: 200px;
+    
+    
+}
+#main-header > h3 {
+    padding: 10px;
+}
+
+#about {
+    margin-bottom: 100px;
+}
+
+#skills > .icons {
+    display: inline-block;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#skills > .icons > img {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 5px;
+    margin-left: 85px;
+}
+
+#contact {
+    border-top: blue 3px;
+    margin-bottom: 100px;
+}
+
+#contact .contact-data {
+    margin: 0;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#contact .contact-social-icons a{
+    padding: 15px;
+}
+
+#contact .contact-form {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+
+#contact .contact-form form input,
+#contact .contact-form form textarea {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: #2b4a64 0px;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 0
+}
