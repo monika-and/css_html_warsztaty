@@ -2,19 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>css_html_warsztaty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt portfolio</title>
+    
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <! wstawianie logo>
-   <header>
+
+   <!-- wstawianie menu -->
+   <nav>
+        <label for="drop" class="toggle">Menu</label>
+       <input type="checkbox" id="drop" />
        
+        <ul>
+            <li class="menu-item"><a href="about">O mnie</a></li>
+            <li class="menu-item"><a href="skills">Umiejętności</a></li>
+            <li class="menu-item"><a href="portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="contact">Kontakt</a></li>
+        </ul> 
+   </nav>
+   
+   <!-- wstawianie headera -->
+   <header>
+       <h2>Monika Andrzejewska</h2>
+       <h3>Junior Frontend Developer</h3>
    </header>
    
-   <! wstawianie menu>
-   <nav>
-       
-   </nav>
+   <!-- dodawanie sekcji o mnie -->
+   <section id="about">
+       <h2>O mnie</h2>
+       <p>Nazywam się Monika Andrzejewska. Od pewnego czasu interesuję się programowaniem Front End. Uczestniczyłam w bootcampie organizowanym przez Akademię 108 i chciałabym dalej się rozwijać, czerpiąc z doświadczenia Front End Developerów. Jestem pełna motywacji i determinacji do dalszej pracy.</p>
+   </section>
+    
+   <!-- dodawanie sekcji umiejętności -->
+   <section id="skills">
+      <h2>Umiejętności</h2>
+       <p>W trakcie trwania kursu poznałam:</p>
+       <img src="icons/HTML5.png" alt="Ikona HTML5">
+       <img src="icons/CSS3.png" alt="Ikona CSS3">
+       <img src="icons/JS.png" alt="Ikona JavaScript">
+       <img src="icons/rwd.png" alt="Ikona RWD">
+       <img src="icons/jQuery.png" alt="Ikona jQuery">
+       <img src="icons/git.png" alt="Ikona git">
+       <img src="icons/gulp.png" alt="Ikona gulp">
+       <img src="icons/sass.png" alt="Ikona Sass">
+              
+   </section>
+   
+    <!-- dodawanie footera -->
+    <footer>
+        
+    </footer>
     
 </body>
 </html>
